@@ -1,0 +1,218 @@
+注：es地址为外网  http://172.16.17.203:39201/   172.16.17.203:39210
+            网警  http://172.16.17.11:39201/    http://172.16.17.11:39200/
+1.tag
+===新增INDEX===
+curl -XPUT 'http://172.30.10.31:39200/test_wj_tag' -d '
+{    
+    "settings":{
+        "number_of_shards": 3,
+        "number_of_replicas": 0
+    }
+}'
+===新增TYPE===
+curl -XPUT 'http://172.30.10.31:39200/test_wj_tag/_mapping/PERSON?pretty' -d '
+{        
+    "properties":{
+        "target":{
+            "type": "string",
+            "fielddata":true,
+            "fields": {
+               "raw": {
+                   "ignore_above": 256,
+                   "index": "not_analyzed",
+                   "type": "string"
+               }
+            }
+        },
+        "sys_tags":{
+            "type": "string",
+            "copy_to": "tags",
+            "fielddata":true,
+            "fields": {
+               "raw": {
+                   "ignore_above": 256,
+                   "index": "not_analyzed",
+                   "type": "string"
+               }
+            }
+        },
+        "tags":{
+            "type": "string",
+            "fielddata":true,
+            "fields": {
+               "raw": {
+                   "ignore_above": 256,
+                   "index": "not_analyzed",
+                   "type": "string"
+               }
+            }
+        },
+        "shared_tags":{
+            "type": "string",
+            "copy_to":"tags",
+            "fielddata":true,
+            "fields": {
+               "raw": {
+                   "ignore_above": 256,
+                   "index": "not_analyzed",
+                   "type": "string"
+               }
+            }
+        },
+        "public_tags":{
+            "type": "nested",
+            "properties": {
+                "user":{
+                    "type":"string"
+                },
+                "tags":{
+                    "type":"string",
+                    "fielddata":true,
+                    "fields": {
+                        "raw": {
+                            "ignore_above": 256,
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    }
+               }
+            }
+        },
+        "private_tags":{
+            "type": "nested",
+            "properties": {
+                "user":{
+                    "type":"string"
+                },
+                "tags":{
+                    "type":"string",
+                    "fielddata":true,
+                    "fields": {
+                        "raw": {
+                            "ignore_above": 256,
+                            "index": "not_analyzed",
+                            "type": "string"
+                        }
+                    }
+               }
+            }
+        }
+    }
+}'
+
+2.private_tag_history
+===新增INDEX===
+curl -XPUT 'http://172.30.10.31:39200/test_wj_private_tag_history' -d '
+{    
+    "settings":{
+        "number_of_shards": 3,
+        "number_of_replicas": 0
+    }
+}'
+===新增TYPE===
+curl -XPUT 'http://172.30.10.31:39200/test_wj_private_tag_history/_mapping/PERSON?pretty' -d '
+{        
+    "properties":{
+        "targets":{
+            "type": "string"
+        },
+        "tags":{
+            "type": "string",
+            "fields": {
+                "raw": {
+                    "ignore_above": 256,
+                    "index": "not_analyzed",
+                    "type": "string"
+                }
+            }
+        },
+        "op_user":{
+            "type": "string"
+        },
+        "op_method":{
+            "type": "string"
+        },
+        "op_time":{
+            "type": "date"
+        },
+        "state":{
+            "type": "string"
+        }
+    }
+}'
+
+3.public_tag_history
+===新增INDEX===
+curl -XPUT 'http://172.30.10.31:39200/test_wj_public_tag_history' -d '
+{    
+    "settings":{
+        "number_of_shards": 3,
+        "number_of_replicas": 0
+    }
+}'
+===新增TYPE===
+curl -XPUT 'http://172.30.10.31:39200/test_wj_public_tag_history/_mapping/PERSON?pretty' -d '
+{        
+    "properties":{
+        "targets":{
+            "type": "string"
+        },
+        "tags":{
+            "type": "string",
+            "fields": {
+                "raw": {
+                    "ignore_above": 256,
+                    "index": "not_analyzed",
+                    "type": "string"
+                }
+            }
+        },
+        "op_user":{
+            "type": "string"
+        },
+        "op_method":{
+            "type": "string"
+        },
+        "op_time":{
+            "type": "date"
+        },
+        "state":{
+            "type": "string"
+        }
+    }
+}'
+
+4.sys_tag_last_operation
+===新增INDEX===
+curl -XPUT 'http://172.30.10.31:39200/test_wj_sys_tag_last_operation' -d '
+{    
+    "settings":{
+        "number_of_shards": 3,
+        "number_of_replicas": 0
+    }
+}'
+===新增TYPE===
+curl -XPUT 'http://172.30.10.31:39200/test_wj_sys_tag_last_operation/_mapping/PERSON?pretty' -d '
+{        
+    "properties":{
+        "targets":{
+            "type": "string"
+        },
+        "tags":{
+            "type": "string",
+            "fields": {
+                "raw": {
+                    "ignore_above": 256,
+                    "index": "not_analyzed",
+                    "type": "string"
+                }
+            }
+        },
+        "op_method":{
+            "type": "string"
+        },
+        "op_time":{
+            "type": "date"
+        }
+    }
+}'

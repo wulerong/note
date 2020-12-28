@@ -1,0 +1,126 @@
+http://blog.csdn.net/yuzongtao/article/details/76061897?locationNum=1&fps=1
+
+
+
+1.插入一条数据
+INSERT
+{"FH":"如家001","ZJHM":"342222199410074433"}
+INTO HOTEL
+
+RETURN NEW
+
+2.插入多条数据
+ 
+FOR DOCU IN
+[
+    
+{"FH":"如家001","ZJHM":"342222199410074433"},
+    
+{"FH":"如家001","ZJHM":"342222199410074433"},
+    
+{"FH":"如家001","ZJHM":"342222199410074433"},
+    
+{"FH":"如家001","ZJHM":"342222199410074433"},
+    
+{"FH":"如家001","ZJHM":"342222199410074433"}
+
+]
+
+INSERT DOCU INTO HOTEL
+
+RETURN NEW
+
+
+
+3.最短路径查询
+
+FOR v,e
+IN
+OUTBOUND 
+SHORTEST_PATH 'PERSON/1' to 'PERSON/4'
+GRAPH 'test'
+return e
+
+4.以某个顶点为起点深度查询
+for v,e,p
+
+in 1..3
+
+OUTBOUND 'HOTEL/3301020060'
+
+GRAPH 'RELATION_TEST'
+
+return distinct v
+
+
+
+
+for v1 in (
+    for va,ea,pa
+    in 1..1
+    any 'PERSON/7'
+    GRAPH 'test'
+    return distinct va
+)
+for v2 in(
+    for vc,ec,pc
+    in 1..1
+    any 'PERSON/9'
+    GRAPH 'test'
+    return distinct vc
+)
+filter v1._id == v2._id
+return v1
+
+
+
+    for va,ea,pa
+    in 1..1
+    any 'PERSON/7'
+    GRAPH 'test'
+    filter va._id in (
+        for vc,ec,pc
+        in 1..1
+        any 'PERSON/9'
+        GRAPH 'test'
+        return distinct vc._id
+    )
+return distinct va
+
+
+
+for v,e,p
+
+in 1..3
+
+OUTBOUND 'PERSON/230381185401147087'
+
+GRAPH 'RELATION_TEST'
+OPTIONS {uniqueVertices:"path"}
+filter v._key == '3301020060' 
+or v._key == '41032318640807794X' 
+or v._key == '210682186007073358'
+
+return distinct v
+
+
+
+for v,e,p
+
+in 1..3
+
+OUTBOUND 'HOTEL/3301020060'
+
+GRAPH 'RELATION_TEST'
+OPTIONS  {uniqueVertices:"path",uniqueEdges:"path"}
+return distinct e
+
+
+for v,e,p
+in 1..3
+OUTBOUND 'PERSON/230381185401147087'
+GRAPH 'RELATION_TEST'
+OPTIONS {uniqueVertices:"path",uniqueEdges:"path"}
+filter v._key in ['3301020060','41032318640807794X','210682186007073358']
+AND (e._id like '%RU_ZHU/%' or e._id like '%HOTEL_TO_PERSON/%')
+return distinct e

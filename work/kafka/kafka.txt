@@ -1,0 +1,17 @@
+172.10.30.31
+
+ssh root@data01
+root  r@@t001!
+
+[root@data01 /bin]$ kafka-topics --zookeeper data02:2181/kafka --list
+
+[root@data01 /bin]$ kafka-console-consumer --zookeeper data02:2181/kafka --topic elk_log1 --from-beginning --max-messages 10000
+kafka-topics --create --zookeeper data02:2181/kafka --replication-factor 3 --partitions 1 --topic elk_log
+kafka-topics --delete --zookeeper data02:2181/kafka --topic elk_log_test
+
+kafka-console-producer --broker-list data02:9092 --topic elk_log
+
+
+
+
+

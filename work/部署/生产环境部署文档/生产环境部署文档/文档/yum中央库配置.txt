@@ -1,0 +1,51 @@
+CentOS系统下使用YUM源配置方法如下：
+
+    1.进入/etc/yum.repos.d,创建bak目录，将全部repos文件mv到bak中，只留下Base.repo
+
+    2.修改Base.repo文件中[base] 
+
+              baseurl=http://10.16.15.120/centos7.4  (Centos7.6改为baseurl=http://10.16.15.120/centos7.6)    
+
+              enable=1
+
+              gpgcheck=0
+
+    (注释掉mirrorlist，删除[updates][updates][extras][centosplus]配置信息)
+
+    3.yum clean all  
+
+     yum makecache
+
+     yum list
+
+
+
+
+
+
+[base]
+name=CentOS-$releasever
+enabled=1
+failovermethod=priority
+##baseurl=http://yum.tbsite.net/centos/$releasever/os/$basearch
+baseurl=http://10.16.15.120/centos7.6
+gpgcheck=0
+##gpgkey=http://yum.tbsite.net/centos/RPM-GPG-KEY-CentOS-7
+
+[updates]
+name=CentOS-$releasever
+enabled=1
+failovermethod=priority
+##baseurl=http://yum.tbsite.net/centos/$releasever/updates/$basearch/
+baseurl=http://10.16.15.120/centos7.6
+gpgcheck=0
+##gpgkey=http://yum.tbsite.net/centos/RPM-GPG-KEY-CentOS-7
+
+[extras]
+name=CentOS-$releasever
+enabled=1
+failovermethod=priority
+##baseurl=http://yum.tbsite.net/centos/$releasever/extras/$basearch/
+baseurl=http://10.16.15.120/centos7.6
+gpgcheck=0
+##gpgkey=http://yum.tbsite.net/centos/RPM-GPG-KEY-CentOS-7

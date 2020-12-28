@@ -1,0 +1,36 @@
+1 查看某个文件提交日志
+git log --oneline /d/WORK/project/BATCH/dataclean/dataggr-ddl/service
+
+2 回退代码
+git   reset  --hard  15d1043 
+
+3.强制提交
+git push -f origin master
+
+git   reset  --hard  8c66703 
+
+
+
+git status
+
+git add 1.txt 2.txt 
+
+git commit -m "xxxxxx"
+
+git push origin develop
+
+git branch
+
+git branch test
+
+git branch -d test
+
+git branch -m test TEST_1
+
+git checkout develop
+
+git merge
+
+git rebase
+
+git cherry-pick 190a613d48adb0311986f2381c4c664945c7381a b421cff5de00fb4f5cc49c5bb9707e66a3bcdef1 

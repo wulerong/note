@@ -1,0 +1,18 @@
+http://repos.corp.hzcominfo.com:6082/projects/DAG/repos/dpc-new/browse/kudu
+
+
+
+Pump.pump  in   then  trans(data)   out 
+
+只有一个Pump input+output
+
+只有一个input  --------->多个表
+只有一个output ---------->多个表
+
+kafkaETLinput
+
+100个数据
+200个点  + 100边
+
+
+

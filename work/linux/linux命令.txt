@@ -1,0 +1,31 @@
+linux 命令
+chmod -x run.sh
+ps aux | grep "relation.jar"
+vim run.sh
+mvn clean package dependency:copy-dependencies
+
+mvn -DaltDeploymentRepository=cominfo-snp::default::http://repos.corp.hzcominfo.com:6080/nexus/content/repositories/snapshots deploy
+
+kill -9 `ps aux | grep "relation-data-server" | grep -v grep | awk '{print $2}'`^C
+
+
+编辑文件命令
+vi  run.sh 进入文件
+i  切到insert状态
+esc 退出insert状态
+:wq  write quit  /  :q   quit
+
+连接到其他环境
+ssh
+
+find / -name topicrel.jar
+
+netstat -ano|findstr "8080" 
+
+
+
+rsync -r /data01/gyga/dataggr-calc-feature-test.jar root@172.30.10.31:/ddltest
+	
+
+
+rm -rf feature-v2-calc_unse11111
