@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本信息</title>
+</head>
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="../static/plugin/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/css/baseInfo.css">
+<link rel="stylesheet" href="../static/css/template.css">
+<body>
+    <!--头部开始-->
+    <head>
+        <div class="head-box">
+            <div class="head-top">
+                <!--返回-->
+                <div class="back-box"><i class="fa fa-chevron-left"></i></div>
+            </div>
+            <div class="head-bottom">
+                <div class="img"><img src="" alt=""></div>
+                <span class="name">张大大</span>
+                <span class="cardId">4103748086890</span>
+            </div>
+        </div>
+    </head>
+    <!--头部结束-->
+    <section>
+        <!--曾用名-->
+        <div class="personBaseInfo marR-bg">
+            <div class="name"><span>曾用名</span>无</div>
+            <div class="sex"><span>性别</span>男</div>
+            <div class="birth"><span>出生日期</span>1986-6-23</div>
+            <div class="cardId"><span>证件号码</span>2345678987654</div>
+            <div class="national"><span>民族</span>汉族</div>
+            <div class="native"><span>籍贯</span>浙江省 杭州市</div>
+            <div class="domicile"><span>户籍地</span>浙江省 杭州市</div>
+        </div>
+        <div class="personBaseInfo marR-bg">
+            <div class="namepinyin"><span>姓名拼音</span>zhangdada</div>
+            <div class="animal"><span>属相</span>虎</div>
+            <div class="constellation"><span>星座</span>白羊座</div>
+            <div class="marital"><span>婚姻状态</span>离异</div>
+            <div class=" fileNumber"><span>暂住档案号</span>xxxxxx</div>
+            <div class="doorNo"><span>户号</span>xxxxxx</div>
+            <div class="type"><span>人口类型</span>常口</div>
+        </div>
+        <div class="personBaseInfo marR-bg">
+            <div class="passport"><span>护照</span>xxxxxx</div>
+            <div class="pass"><span>港澳通行证</span>xxxxxxx</div>
+            <div class="pass"><span>台湾通行证</span>xxxxxx</div>
+            <div class="foreigners"><span>境外人员</span>否</div>
+            <div class="military"><span>兵役情况</span>未服兵役</div>
+        </div>
+        <div class="personBaseInfo marR-bg">
+            <div class="passport"><span>文化程度</span>小学</div>
+            <div class="pass"><span>宗教信仰</span>伊斯兰教</div>
+            <div class="pass"><span>政治派别</span>共产党</div>
+            <div class="foreigners"><span>服务场所</span>2017-09-10 环球一号娱乐</div>
+            <div class="military"><span>工作单位</span>2017-09-10 环球一号娱乐有限公司</div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="../static/plugin/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement, resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth >= 750) {
+                    docEl.style.fontSize = '100px';
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

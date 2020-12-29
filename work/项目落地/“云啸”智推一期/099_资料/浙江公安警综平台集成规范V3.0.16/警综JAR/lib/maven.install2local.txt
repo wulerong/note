@@ -1,0 +1,4 @@
+mvn install:install-file -Dfile=D:/var/浙江公安警综平台集成规范V3.0.16/警综JAR/lib/ws-sdk-1.0.4.2plus.jar -DgroupId=com.alibaba.csb.sdk -DartifactId=ws-sdk -Dversion=1.0.4.2plus -Dpackaging=jar
+
+mvn install:install-file -Dfile=D:/var/浙江公安警综平台集成规范V3.0.16/警综JAR/lib/http-sdk.jar -DgroupId=com.alibaba.csb.sdk -DartifactId=http-sdk -Dversion=1.0 -Dpackaging=jar
+

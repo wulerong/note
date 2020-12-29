@@ -1,0 +1,14 @@
+ $.ajax({
+                     type: "post",
+                     url: url,// + '?ZJHM=111&QH=123',
+                     data: JSON.parse(param),
+                     dataType: "json",
+                     headers:{
+                             "userKey":userKey,
+                             "Content-Type":"application/x-www-form-urlencoded;text/plain;charset=UTF-8"//一定要加application/x-www-form-urlencoded
+                     },
+                     success: function(data){
+                         debugger;
+                         $("#result").html(data);
+                     }
+                 });

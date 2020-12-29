@@ -1,0 +1,37 @@
+.biometric-content {
+    padding: .32rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-x: auto;
+}
+.biometric-content .img {
+    width: 2rem;
+    height: 2rem;
+    background-color: #ccc;
+    box-shadow: 0 .05rem .16rem rgba(48,166,241,.35);
+    border-radius: .20rem;
+    /*border: 1px solid #e0e0e0;*/
+    display: block;
+    margin: 0 auto .32rem auto;
+}
+.biometric-content ul {
+    width: 15rem;
+
+}
+.biometric-content li {
+    float: left;
+    margin-right: .30rem;
+    text-align: center;
+}
+.biometric-content li > span {
+    display: block;
+}
+.biometric-content .date {
+    font-size: .26rem;
+    color: #999;
+}
+.biometric-content .collect {
+    font-size: .30rem;
+    color: #333;
+}

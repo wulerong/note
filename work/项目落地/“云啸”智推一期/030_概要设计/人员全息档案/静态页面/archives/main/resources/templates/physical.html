@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>身体特征</title>
+</head>
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="../static/plugin/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/css/physical.css">
+<link rel="stylesheet" href="../static/css/template.css">
+<body>
+
+    <!--侧边栏-->
+    <div class="sidrbar-bgc"></div>
+    <div class="sidebar">
+        <ul class="menu1">
+            <li>身体特征
+                <ul class="menu2">
+                    <li>基本信息</li>
+                    <li>脸型</li>
+                    <li>体重</li>
+                    <li>体型</li>
+                </ul>
+            </li>
+            <li>生物识别
+                <ul class="menu2">
+                    <li>指纹</li>
+                    <li>掌纹</li>
+                    <li>足印</li>
+                    <li>鞋印</li>
+                    <li>声纹</li>
+                    <li>静脉</li>
+                    <li>虹膜</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!--头部开始-->
+    <head>
+        <div class="head-box">
+            <div class="head-top">
+                <!--返回-->
+                <div class="back-box"><i class="fa fa-chevron-left"></i></div>
+                <!--文字-->
+                <h1 class="text">张大大-身体特征</h1>
+                <!--右方图标-->
+                <div class="head-icon"><i class="fa fa-align-right"></i></div>
+            </div>
+        </div>
+    </head>
+    <!--头部结束-->
+    <!--主体部分-->
+    <section>
+        <div class="marR-bg">
+            <div class="title-box">
+                <div class="bar"></div>
+                <div class="title">基本信息</div>
+            </div>
+            <div class="personBaseInfo">
+                <div class="height"><span>身高</span>182cm</div>
+                <div class="accent"><span>口音</span>杭州</div>
+                <div class="blood"><span>血型</span>o型</div>
+                <div class="DNA"><span>DNA</span>xxxxxx</div>
+            </div>
+        </div>
+        <div class="marR-bg">
+            <div class="title-box">
+                <div class="bar"></div>
+                <div class="title">脸型</div>
+            </div>
+            <div class="abnormal-content baseContent">
+                <ul>
+                    <li>
+                        <h3>圆脸微胖</h3>
+                        <div class="date">2017-02-21 萧山公安分局</div>
+                        <div class="white">
+                            <div class="yuan"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="marR-bg">
+            <div class="title-box">
+                <div class="bar"></div>
+                <div class="title">体型</div>
+            </div>
+            <div class="abnormal-content baseContent">
+                <ul>
+                    <li>
+                        <h3>微胖</h3>
+                        <div class="date">2017-02-21 萧山公安分局盘问</div>
+                        <div class="white">
+                            <div class="yuan"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>微胖</h3>
+                        <div class="date">2017-02-21 萧山公安分局盘问</div>
+                        <div class="">
+                            <div class="yuan-gray"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>微胖</h3>
+                        <div class="date">2017-02-21 萧山公安分局盘问</div>
+                        <div class="">
+                            <div class="yuan-gray"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="marR-bg">
+            <div class="title-box">
+                <div class="bar"></div>
+                <div class="title">体重</div>
+            </div>
+            <div class="abnormal-content baseContent">
+                <ul>
+                    <li>
+                        <h3>82kg</h3>
+                        <div class="date">2017-02-21 萧山公安分局盘问</div>
+                        <div class="white">
+                            <div class="yuan"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>82kg</h3>
+                        <div class="date">2017-02-21 萧山公安分局盘问</div>
+                        <div class="">
+                            <div class="yuan-gray"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>82kg</h3>
+                        <div class="date">2017-02-21 萧山公安分局盘问</div>
+                        <div class="">
+                            <div class="yuan-gray"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="../static/plugin/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/plugin/jquery/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement, resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth >= 750) {
+                    docEl.style.fontSize = '100px';
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+<script type="text/javascript">
+    $(function () {
+        $('.head-icon').on('click',function () {
+            $('.sidebar ').css({right:'0'});
+            $('.sidrbar-bgc').stop().fadeIn();
+        })
+        $('.sidrbar-bgc').on('click',function () {
+            $('.sidebar ').css({right:'-100%'});
+            $('.sidrbar-bgc').stop().fadeOut();
+        })
+    })
+</script>
+</html>

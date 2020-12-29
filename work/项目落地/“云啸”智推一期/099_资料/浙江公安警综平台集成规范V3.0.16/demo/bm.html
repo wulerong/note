@@ -1,0 +1,430 @@
+
+<html>
+  <head>
+    <title>部门管理</title>
+	<LINK  href="cssjs/main.css" rel=stylesheet>
+	<SCRIPT language=javascript src="cssjs/selectabletablerows.js" type=text/javascript></SCRIPT>
+	<script src="cssjs/jquery-1.8.3.min.js" type="text/javascript"></script>
+	<SCRIPT language=javascript>
+	<!--
+	function mouseOverRow(objRow){
+		addClassName(objRow,'ListTableRowHighlight');
+	}
+	function mouseOutRow(objRow){
+		removeClassName(objRow,'ListTableRowHighlight');
+	}
+	//-->
+	</SCRIPT>
+
+  </head>
+  
+  <body id="divs">
+<TABLE cellSpacing="1" width="100%" border="0">
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE height="100%" cellSpacing="0" width="100%" border="0" leftmargin="0" topmargin="0">
+        <TBODY>
+        <TR>
+          <TD>
+
+            <FORM id='form1' name='form1' action='/jwzh/page/department/department_query.jsp' method="post">
+			<TABLE class="i-03-prompt-tbl" cellSpacing="0" cellPadding="0">
+              <TBODY>
+              <TR>
+                <TD class="i-03-prompt-td-1"></TD>
+                <TD class="i-03-prompt-td">部门管理</TD>
+                <TD class="i-03-prompt-td-3"></TD>
+			  </TR>
+			  </TBODY>
+			</TABLE>
+            <TABLE class="i-03-tbl" cellSpacing="0" cellPadding="0">
+              <TR>
+				<TD class="i-03-tbl-rect-1"></TD>
+                <TD class="i-03-tbl-rect-2"></TD>
+                <TD class="i-03-tbl-rect-3"></TD>
+			  </TR>
+              <TR>
+                <TD class="i-03-tbl-rect-8"></TD>
+                <TD>
+                  <TABLE cellSpacing="2" cellPadding="0" width="100%" border="0">
+                    <TBODY>
+                    <TR>
+                      <TD class="i-03-td-title" width="7%">部门编码 </TD>
+                      <TD class="i-03-td" width="22%"><INPUT class="QueryBarInputBox" name="depcode" value=> </TD>
+                      <TD class="i-03-td-title" width="7%">部门名称 </TD>
+                      <TD class="i-03-td" width="22%"><INPUT class="QueryBarInputBox" name="depname" value=> </TD>
+                      <TD class="i-03-td-title" width="7%">上级部门</TD>
+                      <TD class="i-03-td" width="22%">
+						<input type="hidden" id="pid" name="pid" value="">
+						<INPUT type="text" id="pname" name="pname" value="" class="QueryBarInputBox" style="width: 75%" readonly="readonly"> 
+					  </TD>
+					 </TR>
+					     <TR>
+                      <TD class="i-03-td-title">所属部门 </TD>
+                       <TD class="i-03-td">
+						<input type="hidden" id="code" name="code" value="330300000000">
+						<INPUT type="text" id="pnames" name="pnames" value="浙江省温州市公安局" class="QueryBarInputBox"> 
+					  </TD>
+					  <TD class="i-03-td-title"></TD>
+					  <TD class="i-03-td"></TD>
+					   <TD class="i-03-td-title"></TD>
+                      <TD class="i-03-td">
+					  <INPUT class="ButtonQuery" onclick="javascript:alert('查询');" type="button" value="查 询" name="ButtonQuery"> 
+					  <INPUT class="ButtonQuery" onclick="formReset()" type="button" value="重 置" name="ButtonQuery">
+                      </TD>
+					 </TR>
+					 </TBODY>
+				  </TABLE>
+				</TD>
+				<TD class="i-03-tbl-rect-4"></TD>
+			  </TR>
+			  <TR>
+                <TD class="i-03-tbl-rect-7"></TD>
+                <TD class="i-03-tbl-rect-6"></TD>
+                <TD class="i-03-tbl-rect-5"></TD>
+			  </TR>
+			</TABLE>
+            <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0" valign="top">
+              <TBODY>
+              <TR height="20">
+                <TD></TD></TR>
+			  </TBODY>
+			</TABLE>
+
+            <TABLE class="e-01-tbl"  cellSpacing="0" borderColorDark="#ffffff" 
+            cellPadding="0" width="100%" borderColorLight="#e4e4e4" border="1">
+              <THEAD>
+              <TR class="e-01-tbl-th-tr">
+                <TD class="e-01-tbl-th-td" width="5%"><input type="checkbox" name="allbox" id="allbox" onclick="changall(this)"></TD>
+                <TD class="e-01-tbl-th-td" width="5%">序号</TD>
+                <TD class="e-01-tbl-th-td" width="10%" >部门代码</TD>
+                <TD class="e-01-tbl-th-td" width="25%" >部门名称</TD>
+                <TD class="e-01-tbl-th-td" width="25%" >部门简称</TD>
+                <TD class="e-01-tbl-th-td" width="10%" >部门电话</TD>
+                <TD class="e-01-tbl-th-td" width="10%" >部门地址</TD>
+                <TD class="e-01-tbl-th-td">操作</TD>
+              </TR>
+              </THEAD>
+              <TBODY>
+              
+              <TR class="e-01-tr-1" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids0" name="ids" value="1"></TD>
+                <TD class="e-01-td-c">1</TD>
+                
+                <TD class="e-01-td" noWrap>330300000000</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局</TD>
+                <TD class="e-01-td" noWrap>温州市公安局</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              <TR class="e-01-tr-2" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids1" name="ids" value="049a9e45-3979-4fb7-8b3c-530021849788"></TD>
+                <TD class="e-01-td-c">2</TD>
+                
+                <TD class="e-01-td" noWrap>330300010000</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局国内安全保卫支队</TD>
+                <TD class="e-01-td" noWrap>温州国保支队</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              <TR class="e-01-tr-1" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids2" name="ids" value="3d3d74fb-e89a-4e81-b915-01c257ba919d"></TD>
+                <TD class="e-01-td-c">3</TD>
+                
+                <TD class="e-01-td" noWrap>330300010100</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局国内安全保卫支队一大队</TD>
+                <TD class="e-01-td" noWrap>温州国保支队一大队</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              <TR class="e-01-tr-2" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids3" name="ids" value="99e84279-f0a7-4933-a7d9-ac8c28db6178"></TD>
+                <TD class="e-01-td-c">4</TD>
+                
+                <TD class="e-01-td" noWrap>330300010200</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局国内安全保卫支队二大队</TD>
+                <TD class="e-01-td" noWrap>温州国保支队二大队</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              <TR class="e-01-tr-1" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids4" name="ids" value="ae8253af-d3a2-4b44-93eb-2eae031d526e"></TD>
+                <TD class="e-01-td-c">5</TD>
+                
+                <TD class="e-01-td" noWrap>330300010300</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局国内安全保卫支队三大队</TD>
+                <TD class="e-01-td" noWrap>温州国保支队三大队</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              <TR class="e-01-tr-2" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids5" name="ids" value="9efa434c-0393-4ab4-a5e4-ec5bb62928d4"></TD>
+                <TD class="e-01-td-c">6</TD>
+                
+                <TD class="e-01-td" noWrap>330300010400</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局国内安全保卫支队四大队</TD>
+                <TD class="e-01-td" noWrap>温州国保支队四大队</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              <TR class="e-01-tr-1" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids6" name="ids" value="794388b5-a943-4d90-b61c-1bb02071c1e9"></TD>
+                <TD class="e-01-td-c">7</TD>
+                
+                <TD class="e-01-td" noWrap>330300010500</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局国内安全保卫支队五大队</TD>
+                <TD class="e-01-td" noWrap>温州国保支队五大队</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              <TR class="e-01-tr-2" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids7" name="ids" value="f360c7fd-398b-40b8-8871-9628e3fac696"></TD>
+                <TD class="e-01-td-c">8</TD>
+                
+                <TD class="e-01-td" noWrap>330300010600</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局国内安全保卫支队六大队</a></TD>
+                <TD class="e-01-td" noWrap>温州国保支队六大队</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              <TR class="e-01-tr-1" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids8" name="ids" value="8c8862b4-2809-4a7d-93bd-6fa39285f8c6"></TD>
+                <TD class="e-01-td-c">9</TD>
+                
+                <TD class="e-01-td" noWrap>330300010700</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局国内安全保卫支队七大队</TD>
+                <TD class="e-01-td" noWrap>温州国保支队七大队</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              <TR class="e-01-tr-2" onmouseover="javascript:mouseOverRow(this);" 
+              title="" onmouseout="javascript:mouseOutRow(this);">
+                <TD class="e-01-td-c"><input type="checkbox" id="ids9" name="ids" value="d72f982e-0d7f-4166-bace-e9fc456b1962"></TD>
+                <TD class="e-01-td-c">10</TD>
+                
+                <TD class="e-01-td" noWrap>330300010800</TD>
+                <TD class="e-01-td" noWrap>浙江省温州市公安局国内安全保卫支队八大队</TD>
+                <TD class="e-01-td" noWrap>温州国保支队八大队</TD>
+                <TD class="e-01-td" noWrap>&nbsp;</TD>
+              	<TD class="e-01-td" noWrap>&nbsp;</TD>
+                <TD class="e-01-td-c" noWrap>
+				<a href="javascript:void(0)" onclick="javascript:alert('修改');" class="prompt_url">修改</a>
+				</TD>
+				
+              </TR>
+              
+              </TBODY>
+            </TABLE>
+            <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+              <TBODY>
+              <TR>
+                <TD class="e-01-bottom-tbl"></TD></TR>
+              </TBODY>
+            </TABLE>
+            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+			
+				<TR>
+				<TD class=i-03-td width="40%">
+					<INPUT type="button" value="删除" class="ButtonQuery" onclick="javascript:alert('删除')" >
+					<INPUT class="ButtonQuery" onclick="toAdd()" type="button" value="新增" name="ButtonQuery">
+				</TD>
+				<TD class=i-03-td align="right" width="60%">
+					共2027 条&nbsp;
+					第1／203 页&nbsp;
+				    <a style="cursor:hand" onClick="javascript:alert('首页');">首页</a>&nbsp;
+				    <a style="cursor:hand" onClick="javascript:alert('上一页');">上一页</a>&nbsp;
+				    <a style="cursor:hand" onClick="javascript:alert('下一页');">下一页</a>&nbsp;
+				    <a style="cursor:hand" onClick="javascript:alert('尾页');">尾页</a>&nbsp;&nbsp; 
+					<input type="hidden" id="totalpage" name="totalpage" value="203" />
+					<input type="text" id="currentpage" name="currentpage" size="1" value="1">
+					<INPUT type="button" value="跳转" name="Submit2" class="ButtonQuery" onclick="javascript:alert('跳转');" >
+				</TD>
+				</TR>
+			
+			</TABLE>
+            </FORM>
+          </TD></TR>
+		 </TBODY>
+		</TABLE></TD></TR></TBODY></TABLE>
+<script type="text/javascript">
+function submitobj(){
+	var _num = document.getElementById("currentpage");
+	if(_num&&isNaN(_num.value)){
+		alert("必须输入数字！");
+		_num.value = "";
+		_num.focus();
+		return;
+	}
+	document.form1.submit();
+}
+document.onkeypress = function keydown(){
+	if(window.event.keyCode=='13'){
+		submitobj();
+	}
+}
+function querylist(){
+	var turnpagestr = document.getElementById("currentpage");
+	if(turnpagestr)
+		turnpagestr.value = "1";
+	submitobj();
+}
+
+function turnpages(pages){
+	var turnpagestr = document.getElementById("currentpage");
+	var totalpagestr = document.getElementById("totalpage");
+	var checkissub = "0";
+	if(totalpagestr.value != "0"){
+		if(pages == "first"){
+			turnpagestr.value = "1";
+			checkissub = "1";
+		}else if (pages == "before"){
+			if(turnpagestr.value == "1"){
+				alert("当前为首页！");
+			}else{
+				turnpagestr.value = (parseInt(turnpagestr.value) - 1).toString();
+				checkissub = "1";
+			}
+		}else if(pages == "next"){
+			if(turnpagestr.value == totalpagestr.value){
+				alert("当前为尾页!");
+			}else{
+				turnpagestr.value = (parseInt(turnpagestr.value) + 1).toString();
+				checkissub = "1";
+			} 
+		}else if(pages == "last"){
+			turnpagestr.value = totalpagestr.value;
+			checkissub = "1";
+		}else{
+			checkissub = "1";
+		}
+		if(checkissub == "1"){
+			submitobj();
+		}
+	}else{
+		alert("当前没有数据!");
+	}
+}
+
+function changall(obj){
+	var ched = $(obj).is(":checked");
+	$(":checkbox[name=ids]").attr("checked",ched);
+}
+function del(){
+	var dels = $(":checkbox:checked[name=ids]").size();
+	if(dels==0){
+		alert("请选择要要删除的数据！");
+		return;
+	}
+	if(window.confirm("确认要删除么？")){
+		document.form1.action="/jwzh/page/department/department_action.jsp?actiontype=delete";
+		document.form1.submit();
+	}
+}
+
+	function showdep(urlstr){
+		window.showModalDialog(urlstr,'','help:no;unadorned:yes;center:yes;resizable:no;scroll:no;status:no;dialogWidth:650px;dialogHeight:280px;');
+	}
+	function toAdd(){
+		var rtvalue=window.showModalDialog('in.html','','help:no;unadorned:yes;center:yes;resizable:no;scroll:no;status:no;dialogWidth:650px;dialogHeight:280px;');
+		if (rtvalue==2){
+			document.form1.submit();
+		}else if(rtvalue==1){
+			alert('部门添加失败!');
+		}
+	}
+	function toUpdate(id){
+		var rtvalue=window.showModalDialog('/jwzh/page/department/department_input.jsp?actiontype=edit&id='+id,'','help:no;unadorned:yes;center:yes;resizable:no;scroll:no;status:no;dialogWidth:650px;dialogHeight:280px;');
+		if (rtvalue==2){
+			document.form1.submit();
+		}else if(rtvalue==1){
+			alert('部门修改失败!');
+		}
+		
+	}
+	function openDeptree(){
+		var dep = window.showModalDialog('/jwzh/page/department/department_tree.jsp', '','help:no;unadorned:yes;center:yes;resizable:no;scroll:no;status:no;dialogWidth:400px;dialogHeight:460px');
+		if(dep!=undefined){
+			var pname=document.getElementById("pname");
+			var pid=document.getElementById("pid");
+			pname.value=dep.name;
+			pid.value=dep.id;
+		}
+	}	function openDeptrees(){
+		var dep = window.showModalDialog('/jwzh/page/department/department_tree.jsp', '','help:no;unadorned:yes;center:yes;resizable:no;scroll:no;status:no;dialogWidth:400px;dialogHeight:460px');
+		if(dep!=undefined){
+			var pnames=document.getElementById("pnames");
+			var code=document.getElementById("code");
+			pnames.value=dep.name;
+			code.value=dep.deptcode;
+		}
+	}
+	function clearText(obj){
+		document.all[obj].value = "";
+	}
+	function formReset(){
+		clearText('pid');
+		clearText('pname');
+		clearText('depname');
+		clearText('depcode');
+		//clearText('code');
+		//clearText('pnames');
+		yzs(1);
+	}
+</script>
+  </body>
+</html>

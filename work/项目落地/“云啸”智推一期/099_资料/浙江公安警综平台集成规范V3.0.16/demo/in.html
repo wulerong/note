@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <base target="_self">
+    <title>部门编辑</title>
+	<LINK  href="cssjs/main.css" rel=stylesheet>
+  </head>
+  
+  <body>
+<TABLE cellSpacing="1" width="100%" border="0">
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE height="100%" cellSpacing="0" width="100%" border="0" leftmargin="0" topmargin="0">
+        <TBODY>
+        <TR>
+          <TD width="50%">
+            <FORM id='form1' name='form1' action='/jwzh/page/department/department_action.jsp' method="post">
+            <input type="hidden" name="actiontype" value="save" >
+            <input type="hidden" name="depid" value="">
+			<TABLE class="i-03-prompt-tbl" cellSpacing="0" cellPadding="0">
+              <TBODY>
+              <TR>
+                <TD class="i-03-prompt-td-1"></TD>
+                <TD class="i-03-prompt-td">部门编辑</TD>
+                <TD class="i-03-prompt-td-3"></TD>
+			  </TR>
+			  </TBODY>
+			</TABLE> 
+            <TABLE class="i-01-tbl" cellspacing="0" cellpadding="0" width="90%">
+              <TR>
+				<TD class="i-01-td-title-req" width="10%">
+					部门编号
+				</TD>
+				<TD class="i-01-td" width="38%">
+					<input type="text" id="depcode" name="depcode"  maxlength="20" value=""  class="DetailInput">
+				</TD>
+				<TD class="i-01-td-title-req" width="10%">
+					部门名称
+				</TD>
+				<TD class="i-01-td" width="38%">
+					<input type="text" id="depname" name="depname" maxlength="50" value=""  class="DetailInput">
+				</TD>
+			</TR>
+			 <TR>
+				<TD class="i-01-td-title-req" width="10%">
+					部门简称
+				</TD>
+				<TD class="i-01-td" width="38%">
+					<input type="text" id="depshort" name="depshort" maxlength="50" value=""  class="DetailInput">
+				</TD>
+				<TD class="i-01-td-title-req" width="10%">
+					上级部门
+				</TD>
+				<TD class="i-01-td" width="38%">
+					<input type="text" id="pname" name="pname"  value="" readonly="readonly" onclick= "" class="DetailInput">
+					<input type="hidden" id="pid" name="pid"  value="" >
+				</TD>
+			</TR>
+			 <TR>
+				<TD class="i-01-td-title" width="10%">
+					部门电话
+				</TD>
+				<TD class="i-01-td" width="38%">
+					<input type="text" id="telephone" name="telephone" maxlength="15" value=""  class="DetailInput">
+				</TD>
+				<TD class="i-01-td-title-req" width="10%">
+					部门级别
+				</TD>
+				<TD class="i-01-td">
+					<select id="depgrade" name="depgrade" class="DetailInput"><option value="">--请选择--</option><option value='2'>市局</option><option value='3'>分/县局</option><option value='4'>派出所</option></select>
+				</TD>
+			</TR>
+			<TR>
+				<TD class="i-01-td-title" width="10%">
+					部门地址
+				</TD>
+				<TD class="i-01-td" colspan="3">
+					<input type="text" id="address" name="address" maxlength="140" value=""  class="DetailInput">
+				</TD>				
+			</TR>
+			<TR>
+				<TD class="i-01-td-title">
+					备注
+				</TD>
+				<TD class="i-01-td" colspan="3">
+					<input type="text" id="remark" name="remark" maxlength="50" value=""  class="DetailInput">
+				</TD>
+			</TR>
+			<tr>
+				<TD class="i-01-td-title" width="10%">
+					排序号
+				</TD>
+				<TD class="i-01-td" colspan="3">
+					<input type="text" id="sort" name="sort" maxlength="6" value="" onkeyup="this.value=this.value.replace(/[^\d]/g,'')"  onafterpaste="this.value=this.value.replace(/[^\d]/g,'')" class="DetailInput">
+				</TD>
+			</tr>
+            </TABLE>
+            
+            <TABLE cellSpacing="0" cellPadding="0" width="100%" border="0">
+              <TBODY>
+              <TR>
+                <TD class="e-01-bottom-tbl"></TD></TR>
+              </TBODY>
+            </TABLE>
+            
+            <table border="0" width="100%" cellpadding="0" cellspacing="0">
+			  <TR>
+				<TD class=i-03-td align="center">
+					<INPUT type="button" value="保存" name="Submit1" class="ButtonQuery" onclick="javascript:alert('保存')" > 
+					&nbsp;&nbsp;&nbsp;&nbsp;
+					<INPUT type="button" value="取消" name="Submit2" class="ButtonQuery" onclick="window.close();" > 
+				</TD>
+			  </TR>
+			</TABLE>
+            </FORM>
+          </TD></TR>
+		 </TBODY>
+		</TABLE></TD></TR></TBODY></TABLE>
+  </body>
+</html>
+

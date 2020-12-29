@@ -1,0 +1,34 @@
+.fixTab .menuBtn {
+    display: inline-block;
+    position: absolute;
+    top:50px;
+    right: 15px;
+    color: #afafba;
+}
+.infoBox {
+    width: 82%;
+}
+.fixTab {
+    width: 16%;
+}
+.fixTab .subMenu {
+    padding-left:70px;
+}
+.fixTab .subMenu li {
+    float: left;
+    width: 70px;
+    height: 26px;
+    color: #101010;
+    text-align: center;
+    line-height: 26px;
+    margin:10px 0;
+
+
+}
+.fixTab .subMenu .active {
+    border-radius: 25px;
+    background-color: #d6edfc;
+}
+.fingerprint i {
+    right: 90px;
+}

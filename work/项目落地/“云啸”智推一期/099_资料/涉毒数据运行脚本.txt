@@ -1,0 +1,13 @@
+1、两次以上涉毒犯罪人员。
+select * from h_xsbdgk_1108 where sfzh in (SELECT  a.sfzh 
+FROM h_xsbdgk_1108 a
+inner JOIN edw_gazhk_dfk_wffzry f ON a.sfzh=f.r_rybh_sfzh
+WHERE 
+   REGEXP_LIKE(f.r_zyaq,'毒|吸毒|贩毒') group by a.sfzh  having count(distinct f.r_ajbh) > 1)
+
+2、20161001以后有涉毒犯罪人员
+select * from h_xsbdgk_1108 where sfzh in (SELECT  distinct(a.sfzh)
+FROM h_xsbdgk_1108 a
+INNER JOIN edw_gazhk_dfk_wffzry f ON a.sfzh=f.r_rybh_sfzh
+WHERE from_unixtime(cast(f.lrsj/1000000 AS bigint),'yyyyMMdd') >'20161001'
+  AND REGEXP_LIKE(f.r_zyaq,'毒|吸毒|贩毒'))

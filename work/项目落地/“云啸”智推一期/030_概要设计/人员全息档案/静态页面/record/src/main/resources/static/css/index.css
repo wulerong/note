@@ -1,0 +1,86 @@
+
+.basicinformation {
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.personImg {
+    width: 170px;
+    height: 227px;
+    float: left;
+    margin-right: 36px;
+}
+.personInfo {
+    margin-top: 33px;
+}
+.personInfo table {
+    display: inline-block;
+    line-height: 36px;
+}
+.personInfo table td:nth-of-type(2n-1) {
+    font-weight: bold;
+    color: #bbbdd2;
+}
+.personInfo table td:nth-of-type(2n) {
+    margin-right: 32px;
+    display: inline-block;
+    color: #101010;
+}
+.InfoBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.InfoBox > div {
+    background-color: #fff;
+}
+
+.information span {
+    display: block;
+}
+.information ul {
+    display: flex;
+    justify-content: space-around;
+}
+.information img {
+    width: 42px;
+    height: 42px;
+}
+.information li span:nth-of-type(1) {
+    margin: 17px 0 15px;
+}
+.information li {
+    text-align: center;
+    color: #000;
+    display: inline-block;
+}
+.information li span:nth-of-type(2) {
+    width: 34px;
+    height: 18px;
+    background-color: #c4cbe1;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+    border-radius: 7px;
+    margin:0 auto 18px;
+}
+.creature {
+    width: 14%;
+}
+.registration {
+    width: 85%;
+}
+.asset , .bgcInfo , .relative , .foothold{
+    width: 14%;
+}
+.timespace {
+    width: 38%;
+}
+.imgInfo {
+    width: 31%;
+}
+.labelling {
+    width: 70%;
+}

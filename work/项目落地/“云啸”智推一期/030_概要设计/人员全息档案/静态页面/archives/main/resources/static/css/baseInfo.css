@@ -1,0 +1,29 @@
+.head-box {
+    width: 100%;
+    height: 4.50rem;
+}
+.head-bottom {
+    width: 100%;
+    height: 3.42rem;
+    text-align: center;
+}
+.head-bottom > .img {
+    width: 1.80rem;
+    height: 1.80rem;
+    border-radius: 50%;
+    background-color: #cccccc;
+    margin:0 auto .20rem auto;
+}
+.head-bottom > span {
+    display: block;
+}
+.head-bottom > .name {
+    font-size: .40rem;
+    color: #fff;
+    margin-top: .22rem;
+}
+.head-bottom > .cardId {
+    font-size: .30rem;
+    color: #e0e0e0;
+    font-family: 'robat';
+}

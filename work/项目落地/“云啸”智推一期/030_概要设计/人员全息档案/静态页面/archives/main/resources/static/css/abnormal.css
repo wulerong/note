@@ -1,0 +1,42 @@
+.title-box > ul {
+    float: right;
+    margin-bottom: 0;
+}
+.title-box li {
+    float: left;
+    font-size: .26px;
+    color: #2fa9f2;
+    padding: .10rem .22rem;
+    margin-top: .14rem;
+    border:1px solid #2fa9f2;
+    margin-left: -1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+
+}
+.title-box li.active {
+   background-color: #2fa9f2;
+   color: #fff;
+ }
+.title-box li.disabled {
+    color: #e0e0e0;
+    border-color:#e0e0e0;
+    position: relative;
+    z-index: 1;
+    cursor: text;
+}
+.title-box li:nth-of-type(1){
+    border-radius: .16rem 0 0 .16rem;
+}
+.title-box li:last-child{
+    border-radius:0 .16rem .16rem 0;
+    margin-right: .32rem;
+}
+select {
+    border: none;
+    margin-bottom: .40rem;
+}
+.abnormal-content {
+    padding: .40rem .32rem;
+}

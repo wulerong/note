@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>非正常身份背景</title>
+</head>
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="../static/plugin/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../static/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/css/abnormal.css">
+<link rel="stylesheet" href="../static/css/template.css">
+<body>
+    <!--头部开始-->
+    <head>
+        <div class="head-box">
+            <div class="head-top">
+                <!--返回-->
+                <div class="back-box"><i class="fa fa-chevron-left"></i></div>
+                <!--文字-->
+                <h1 class="text">张大大-非正常身份背景</h1>
+                <!--右方图标-->
+                <div class="head-icon"><i class="fa fa-align-right"></i></div>
+            </div>
+        </div>
+    </head>
+    <!--头部结束-->
+    <!--主体部分-->
+    <section>
+        <div class="marR-bg">
+            <div class="title-box">
+                <div class="bar"></div>
+                <div class="title">治安</div>
+                <ul>
+                    <li class="active">涉黄 12</li>
+                    <li>涉毒 1</li>
+                    <li>涉赌 2</li>
+                    <li class="disabled">涉恶 0</li>
+                </ul>
+            </div>
+            <div class="abnormal-content baseContent">
+                <select name="" id="">
+                    <option value="">类型</option>
+                    <option value="">涉黄</option>
+                    <option value="">涉毒</option>
+                </select>
+                <ul>
+                    <li>
+                        <h3>卖淫</h3>
+                        <div class="why">因卖淫被瓜沥派出所行政拘留10日</div>
+                        <div class="date">2017-02-21 萧山公安分局</div>
+                        <div class="white">
+                            <div class="yuan"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>卖淫</h3>
+                        <div class="why">因卖淫被瓜沥派出所行政拘留10日</div>
+                        <div class="date">2017-02-21 萧山公安分局</div>
+                        <div class="">
+                            <div class="yuan-gray"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>卖淫</h3>
+                        <div class="why">因卖淫被瓜沥派出所行政拘留10日</div>
+                        <div class="date">2017-02-21 萧山公安分局</div>
+                        <div class="">
+                            <div class="yuan-gray"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="marR-bg">
+            <div class="title-box">
+                <div class="bar"></div>
+                <div class="title">治安</div>
+                <ul>
+                    <li class="active">盗窃 2</li>
+                    <li>车辆盗窃 1</li>
+                </ul>
+            </div>
+            <div class="abnormal-content">
+                <select name="" id="">
+                    <option value="">类型</option>
+                    <option value="">涉黄</option>
+                    <option value="">涉毒</option>
+                </select>
+                <ul>
+                    <li>
+                        <h3>入室盗窃</h3>
+                        <div class="why">因入室盗窃被行政拘留</div>
+                        <div class="date">2017-02-21 萧山公安分局</div>
+                        <div class="white">
+                            <div class="yuan"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <h3>卖淫</h3>
+                        <div class="why">因入室盗窃被行政拘留</div>
+                        <div class="date">2017-02-21 萧山公安分局</div>
+                        <div class="">
+                            <div class="yuan-gray"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="marR-bg">
+            <div class="title-box">
+                <div class="bar"></div>
+                <div class="title">重点人员</div>
+            </div>
+            <div class="abnormal-content text-center">
+                <img src="../static/images/nodata.svg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="../static/plugin/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript">
+    (function (doc, win) {
+        var docEl = doc.documentElement, resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+            recalc = function () {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth >= 750) {
+                    docEl.style.fontSize = '100px';
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</html>

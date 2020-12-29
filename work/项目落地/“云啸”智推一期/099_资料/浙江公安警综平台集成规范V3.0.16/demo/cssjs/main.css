@@ -1,0 +1,355 @@
+HTML {
+	MARGIN: 0px; HEIGHT: 100%
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #ffffff
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TD {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+.autocomplete {
+	BORDER-RIGHT: #666 1px solid; BORDER-TOP: #666 1px solid; OVERFLOW: hidden; BORDER-LEFT: #666 1px solid; COLOR: #333; BORDER-BOTTOM: #666 1px solid; FONT-FAMILY: Arial; POSITION: absolute; BACKGROUND-COLOR: #fff
+}
+.autocomplete UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: auto; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.autocomplete LI {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #fff 1px solid; DISPLAY: block; PADDING-LEFT: 5px; MARGIN: 0px; BORDER-LEFT: #fff 1px solid; CURSOR: pointer; BORDER-BOTTOM: #fff 1px solid; WHITE-SPACE: nowrap
+}
+.autocomplete LI.selected {
+	BORDER-TOP: #9bc 1px solid; BORDER-BOTTOM: #9bc 1px solid; BACKGROUND-COLOR: #cef
+}
+INPUT.form-autocomplete {
+	BACKGROUND: url(../images/throbber.gif) no-repeat 100% 2px
+}
+INPUT.throbbing {
+	BACKGROUND-POSITION: 100% -18px
+}
+.input-1 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BACKGROUND-IMAGE: url(../images/input_offbg.gif); BORDER-LEFT: #ffffff 1px solid; BORDER-BOTTOM: #ffffff 1px solid
+}
+.input-3 {
+	FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/input_offbg_3.gif); WIDTH: 100%; FONT-FAMILY: 宋体
+}
+.input-on {
+	BORDER-RIGHT: #cc6600 1px solid; BORDER-TOP: #cc6600 1px solid; BORDER-LEFT: #cc6600 1px solid; BORDER-BOTTOM: #cc6600 1px solid
+}
+A.xxsc:link {
+	PADDING-LEFT: 3px; FONT-SIZE: 12px; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 3px; HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.xxsc:visited {
+	PADDING-LEFT: 3px; FONT-SIZE: 12px; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 3px; HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.21:link {
+	PADDING-LEFT: 3px; FONT-SIZE: 12px; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 3px; HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.21:visited {
+	PADDING-LEFT: 3px; FONT-SIZE: 12px; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 3px; HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.21:hover {
+	PADDING-LEFT: 3px; FONT-SIZE: 12px; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 3px; HEIGHT: 20px
+}
+A.211:link {
+	PADDING-LEFT: 3px; FONT-SIZE: 12px; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 3px; HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.211:visited {
+	PADDING-LEFT: 3px; FONT-SIZE: 12px; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 3px; HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.211:hover {
+	PADDING-LEFT: 3px; FONT-SIZE: 12px; WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 3px; HEIGHT: 20px
+}
+A.22:link {
+	PADDING-LEFT: 12px; FONT-SIZE: 13px; WIDTH: 100%; COLOR: #483100; PADDING-TOP: 0px; HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.22:visited {
+	PADDING-LEFT: 12px; FONT-SIZE: 13px; WIDTH: 100%; COLOR: #483100; PADDING-TOP: 0px; HEIGHT: 20px; TEXT-DECORATION: none
+}
+A.22:hover {
+	PADDING-LEFT: 12px; FONT-SIZE: 13px; WIDTH: 100%; COLOR: #ff9900; HEIGHT: 20px; BACKGROUND-COLOR: #ffffff
+}
+A.22:link {
+	PADDING-LEFT: 38px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/zz_0921_menu2_01_off.png); WIDTH: 100%; COLOR: #ccffff; PADDING-TOP: 3px; HEIGHT: 24px; TEXT-DECORATION: none
+}
+A.22:visited {
+	PADDING-LEFT: 38px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/zz_0921_menu2_01_off.png); WIDTH: 100%; COLOR: #ccffff; PADDING-TOP: 3px; HEIGHT: 24px; TEXT-DECORATION: none
+}
+A.22:hover {
+	PADDING-LEFT: 38px; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/zz_0921_menu2_01_on.png); WIDTH: 100%; COLOR: #ffffff; PADDING-TOP: 3px; HEIGHT: 24px
+}
+A.prompt_url:link {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #cc6600; PADDING-TOP: 3px; HEIGHT: 22px
+}
+A.prompt_url:visited {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #cc6600; PADDING-TOP: 3px; HEIGHT: 22px
+}
+A.prompt_url:hover {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #4d3400; PADDING-TOP: 3px; HEIGHT: 22px
+}
+A.prompt_url_bottom:link {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #ebf9ff; PADDING-TOP: 3px; HEIGHT: 22px
+}
+A.prompt_url_bottom:visited {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #ebf9ff; PADDING-TOP: 3px; HEIGHT: 22px
+}
+A.prompt_url_bottom:hover {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #cc6600; PADDING-TOP: 3px; HEIGHT: 22px
+}
+THEAD .arrow {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 3px; PADDING-LEFT: 0px; FONT-SIZE: 12px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; OVERFLOW: hidden; WIDTH: 12px; COLOR: black; PADDING-TOP: 0px; FONT-FAMILY: webdings; HEIGHT: 12px
+}
+.ColumnDisplay {
+	FONT-WEIGHT: 700; FONT-SIZE: 12px; COLOR: #0f6259; FONT-FAMILY: 宋体
+}
+#ColumnDisplay A:link {
+	FONT-WEIGHT: 400; FONT-SIZE: 12px; COLOR: #0a463f; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+#ColumnDisplay A:visited {
+	FONT-WEIGHT: 400; FONT-SIZE: 12px; COLOR: #0a463f; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+#ColumnDisplay A:hover {
+	FONT-WEIGHT: 400; FONT-SIZE: 12px; COLOR: #0a463f; FONT-FAMILY: 宋体; TEXT-DECORATION: none
+}
+#ColumnDisplay A:active {
+	FONT-WEIGHT: 400; FONT-SIZE: 12px; COLOR: #0a463f; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+.ButtonSave {
+	BORDER-RIGHT: buttonhighlight 1px outset; BORDER-TOP: buttonhighlight 1px outset; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/ButtonBg.gif); BORDER-LEFT: buttonhighlight 1px outset; WIDTH: 80px; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: buttonhighlight 1px outset; FONT-FAMILY: 宋体; HEIGHT: 22px
+}
+.ButtonQuery {
+	BORDER-RIGHT: buttonhighlight 1px outset; BORDER-TOP: buttonhighlight 1px outset; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/ButtonBg.gif); BORDER-LEFT: buttonhighlight 1px outset; WIDTH: 70px; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: buttonhighlight 1px outset; FONT-FAMILY: 宋体; HEIGHT: 22px
+}
+.ButtonQuery1 {
+	BORDER-RIGHT: buttonhighlight 1px outset; BORDER-TOP: buttonhighlight 1px outset; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/ButtonBg.gif); BORDER-LEFT: buttonhighlight 1px outset; WIDTH: 80px; COLOR: #000000; PADDING-TOP: 2px; BORDER-BOTTOM: buttonhighlight 1px outset; FONT-FAMILY: 宋体; HEIGHT: 22px
+}
+.ButtonForward {
+	BORDER-RIGHT: buttonhighlight 1px outset; BORDER-TOP: buttonhighlight 1px outset; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/ButtonBg.gif); BORDER-LEFT: buttonhighlight 1px outset; WIDTH: 80px; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: buttonhighlight 1px outset; FONT-FAMILY: 宋体; HEIGHT: 22px
+}
+.ButtonSelectEmpty {
+	BORDER-RIGHT: buttonhighlight 1px outset; BORDER-TOP: buttonhighlight 1px outset; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/ButtonBg.gif); BORDER-LEFT: buttonhighlight 1px outset; WIDTH: 80px; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: buttonhighlight 1px outset; FONT-FAMILY: 宋体; HEIGHT: 22px
+}
+.ButtonConvertToAlert {
+	BORDER-RIGHT: buttonhighlight 1px outset; BORDER-TOP: buttonhighlight 1px outset; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/ButtonBg.gif); BORDER-LEFT: buttonhighlight 1px outset; WIDTH: 80px; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: buttonhighlight 1px outset; FONT-FAMILY: 宋体; HEIGHT: 22px
+}
+.ButtonPrint {
+	BORDER-RIGHT: buttonhighlight 1px outset; BORDER-TOP: buttonhighlight 1px outset; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/ButtonBg.gif); BORDER-LEFT: buttonhighlight 1px outset; WIDTH: 80px; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: buttonhighlight 1px outset; FONT-FAMILY: 宋体; HEIGHT: 22px
+}
+.ButtonOutput {
+	BORDER-RIGHT: buttonhighlight 1px outset; BORDER-TOP: buttonhighlight 1px outset; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/ButtonBg.gif); BORDER-LEFT: buttonhighlight 1px outset; WIDTH: 80px; COLOR: #000099; PADDING-TOP: 2px; BORDER-BOTTOM: buttonhighlight 1px outset; FONT-FAMILY: 宋体; HEIGHT: 22px
+}
+.QueryBarBackGround {
+	BACKGROUND-COLOR: #ffffff
+}
+.QueryBarTagText {
+	FONT-SIZE: 12px; COLOR: #000099; FONT-FAMILY: 宋体
+}
+.QueryBarInputBoxRange {
+	FONT-SIZE: 12px; Z-INDEX: 999; WIDTH: 44%; FONT-FAMILY: 宋体
+}
+.QueryBarInputBox {
+	FONT-SIZE: 12px; Z-INDEX: 999; WIDTH: 100%; FONT-FAMILY: 宋体
+}
+.ViewHref {
+	FONT-WEIGHT: 400; FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: 宋体
+}
+#ViewHref A:link {
+	FONT-WEIGHT: 400; FONT-SIZE: 12px; COLOR: #000099; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+#ViewHref A:visited {
+	FONT-WEIGHT: 400; FONT-SIZE: 12px; COLOR: #000099; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+#ViewHref A:hover {
+	FONT-WEIGHT: 400; FONT-SIZE: 12px; COLOR: #990099; FONT-FAMILY: 宋体; TEXT-DECORATION: none
+}
+#ViewHref A:active {
+	FONT-WEIGHT: 400; FONT-SIZE: 12px; COLOR: #000099; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+.DetailListTableHeader {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体; HEIGHT: 22px; BACKGROUND-COLOR: #fff0cc; TEXT-ALIGN: center
+}
+.ListTableHeader {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: 宋体; HEIGHT: 22px; BACKGROUND-COLOR: #4d93fd; TEXT-ALIGN: center
+}
+.ListTableRowHighlight {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: 宋体; HEIGHT: 22px; BACKGROUND-COLOR: #e1f2d6! important
+}
+TR.selected {
+	FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: 宋体; HEIGHT: 22px; BACKGROUND-COLOR: #acb5c0
+}
+.OperateIcon {
+	CURSOR: hand
+}
+.DetailInput {
+	FONT-SIZE: 12px; WIDTH: 100%; FONT-FAMILY: 宋体
+}
+.DetailInputReadonly {
+	FONT-SIZE: 12px; WIDTH: 100%; COLOR: gray; FONT-FAMILY: 宋体
+}
+.DetailInputBox {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+.DrawerHeader {
+	FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/ButtonBg.gif); CURSOR: hand; FONT-FAMILY: 宋体; HEIGHT: 22px
+}
+.NormalText {
+	FONT-SIZE: 12px; FONT-FAMILY: 宋体
+}
+.AlertText {
+	FONT-SIZE: 12px; COLOR: #ff0000; FONT-FAMILY: 宋体
+}
+.LinkText {
+	FONT-SIZE: 12px; CURSOR: hand; COLOR: #0000ff; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+.BlueText {
+	FONT-SIZE: 12px; COLOR: #0000ff; FONT-FAMILY: 宋体; TEXT-DECORATION: none
+}
+.LinkText1 {
+	FONT-SIZE: 12px; CURSOR: hand; COLOR: #554433; FONT-FAMILY: 宋体; TEXT-DECORATION: underline
+}
+.Loading {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; DISPLAY: none; LEFT: 150px; BORDER-LEFT: #000000 1px solid; WIDTH: 300px; BORDER-BOTTOM: #000000 1px solid; POSITION: absolute; TOP: 150px; HEIGHT: 100px; BACKGROUND-COLOR: #eeeeee
+}
+.LoadingShow {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; LEFT: 150px; BORDER-LEFT: #000000 1px solid; WIDTH: 300px; BORDER-BOTTOM: #000000 1px solid; POSITION: absolute; TOP: 150px; HEIGHT: 100px; BACKGROUND-COLOR: #eeeeee
+}
+.LoginInputBox1 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; PADDING-TOP: 8px; BORDER-BOTTOM: 0px; FONT-FAMILY: 宋体; HEIGHT: 23px; BACKGROUND-COLOR: transparent
+}
+.LoginInputBox2 {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 12px; BORDER-LEFT: 0px; PADDING-TOP: 8px; BORDER-BOTTOM: 0px; FONT-FAMILY: 宋体; HEIGHT: 23px; BACKGROUND-COLOR: #ffffff
+}
+.i-01-td-titles {
+	BACKGROUND-POSITION: right top; FONT-WEIGHT: 400; FONT-SIZE: 12px; BACKGROUND-IMAGE: url(../images/btn.gif); WIDTH: auto; COLOR: #ffffff; LINE-HEIGHT: 22px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 26px
+}
+.i-01-td-title {
+	BORDER-RIGHT: #88A6B8 1px solid; PADDING-RIGHT: 2px; BACKGROUND-POSITION: 2px 50%; BORDER-TOP: #88A6B8 1px solid; PADDING-LEFT: 12px; FONT-WEIGHT: normal; PADDING-BOTTOM: 2px; BORDER-LEFT: #88A6B8 1px solid; WIDTH: auto; COLOR: #000066; LINE-HEIGHT: 20px; PADDING-TOP: 2px; BORDER-BOTTOM: #88A6B8 1px solid; BACKGROUND-REPEAT: no-repeat; HEIGHT: 20px; BACKGROUND-COLOR: #d7e8f9; TEXT-ALIGN: right
+}
+.i-01-td {
+	BORDER-RIGHT: #88A6B8 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #88A6B8 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: #88A6B8 1px solid; COLOR: #000066; PADDING-TOP: 2px; BORDER-BOTTOM: #88A6B8 1px solid; HEIGHT: 20px
+}
+.i-01-bottom-tbl {
+	HEIGHT: 3px; BACKGROUND-COLOR: #333333
+}
+.i-01-tbl {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; BORDER-LEFT: 1px; WIDTH: 100%; BORDER-BOTTOM: 1px; BORDER-COLLAPSE: collapse
+}
+.i-01-td-title-req {
+	BORDER-RIGHT: #88A6B8 1px solid; PADDING-RIGHT: 2px; BACKGROUND-POSITION: 2px 50%; BORDER-TOP: #88A6B8 1px solid; PADDING-LEFT: 12px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: #88A6B8 1px solid; WIDTH: auto; COLOR: #cc0000; LINE-HEIGHT: 20px; PADDING-TOP: 2px; BORDER-BOTTOM: #88A6B8 1px solid; BACKGROUND-REPEAT: no-repeat; HEIGHT: 20px; BACKGROUND-COLOR: #d7e8f9; TEXT-ALIGN: right
+}
+.i-01-td-title-dis {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; COLOR: gray; PADDING-TOP: 2px; HEIGHT: 20px; BACKGROUND-COLOR: #f6f6f6; TEXT-ALIGN: right
+}
+.i-02-tbl {
+	BORDER-RIGHT: 1px; BORDER-TOP: 1px; BORDER-LEFT: 1px; WIDTH: 100%; BORDER-BOTTOM: 1px; BORDER-COLLAPSE: collapse
+}
+.i-02-td-title {
+	BORDER-RIGHT: #e4e4e4 1px solid; PADDING-RIGHT: 2px; BACKGROUND-POSITION: 2px 50%; BORDER-TOP: #e4e4e4 1px solid; PADDING-LEFT: 12px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: #e4e4e4 1px solid; WIDTH: auto; COLOR: #000066; LINE-HEIGHT: 20px; PADDING-TOP: 2px; BORDER-BOTTOM: #e4e4e4 1px solid; BACKGROUND-REPEAT: no-repeat; HEIGHT: 20px; BACKGROUND-COLOR: #f6f6f6; TEXT-ALIGN: right
+}
+.i-02-td-title-dis {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; COLOR: #808080; PADDING-TOP: 2px; HEIGHT: 20px; BACKGROUND-COLOR: #fff3e7; TEXT-ALIGN: right
+}
+.i-02-td {
+	BORDER-RIGHT: #e4e4e4 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #e4e4e4 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; BORDER-LEFT: #e4e4e4 1px solid; COLOR: #000066; PADDING-TOP: 2px; BORDER-BOTTOM: #e4e4e4 1px solid; HEIGHT: 20px
+}
+.i-02-bottom-tbl {
+	HEIGHT: 3px; BACKGROUND-COLOR: #333333
+}
+.i-03-prompt-tbl {
+	border-left:solid 1px #8ba8ff;border-right:solid 1px #8ba8ff;border-top:solid 1px #8ba8ff; background:url(allbg.gif) 0px -233px;WIDTH: 100%; height:29px;
+}
+.i-03-prompt-td {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 12px; background:url(allbg.gif) 0px -233px; PADDING-BOTTOM: 0px; COLOR: #044266; LINE-HEIGHT: 29px; PADDING-TOP: 0px; HEIGHT: 29px
+}
+.i-03-prompt-td-1 {
+	background:url(allbg.gif) 0px -233px; WIDTH: 26px; HEIGHT: 29px
+}
+.i-03-prompt-td-3 {
+	background:url(allbg.gif) 0px -233px; WIDTH: 31px; HEIGHT: 29px
+}
+.i-03-prompt-tbl-x {
+	 height:46px; background:url(../images/topcenter.png) repeat-x; WIDTH: 100%; color:#ff6f04; line-height:35px;
+}
+.i-03-prompt-td-x {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-SIZE: 12px;PADDING-BOTTOM: 0px; COLOR: #044266; LINE-HEIGHT: 30px; PADDING-TOP: 0px; HEIGHT: 28px
+}
+.i-03-prompt-td-1-x {
+	background:url(../images/toplefts.png) no-repeat; width:45px; height:46px;
+}
+.i-03-prompt-td-3-x {
+	background:url(../images/topright.png) no-repeat; width:128px;height:46px;
+}
+.i-03-tbl {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; WIDTH: 100%; BORDER-BOTTOM: 0px
+}
+.i-03-tbl-rect-1 {
+	BACKGROUND-IMAGE: url(../images/pophi_050124_001.gif); WIDTH: 11px; HEIGHT: 11px
+}
+.i-03-tbl-rect-2 {
+	BACKGROUND-IMAGE: url(../images/pophi_050124_002.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 11px
+}
+.i-03-tbl-rect-3 {
+	BACKGROUND-IMAGE: url(../images/pophi_050124_003.gif); WIDTH: 11px; HEIGHT: 11px
+}
+.i-03-tbl-rect-4 {
+	BACKGROUND-IMAGE: url(../images/pophi_050124_004.gif); WIDTH: 11px
+}
+.i-03-tbl-rect-5 {
+	BACKGROUND-IMAGE: url(../images/pophi_050124_005.gif); WIDTH: 11px; HEIGHT: 11px
+}
+.i-03-tbl-rect-6 {
+	BACKGROUND-IMAGE: url(../images/pophi_050124_006.gif); BACKGROUND-REPEAT: repeat-x; HEIGHT: 11px
+}
+.i-03-tbl-rect-7 {
+	BACKGROUND-IMAGE: url(../images/pophi_050124_007.gif); WIDTH: 11px; HEIGHT: 11px
+}
+.i-03-tbl-rect-8 {
+	BACKGROUND-IMAGE: url(../images/pophi_050124_008.gif); WIDTH: 11px
+}
+.i-03-td-title {
+	PADDING-RIGHT: 2px; BACKGROUND-POSITION: 2px 50%; PADDING-LEFT: 12px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; WIDTH: auto; COLOR: #000066; LINE-HEIGHT: 20px; PADDING-TOP: 2px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 20px; BACKGROUND-COLOR: #f4f4f4; TEXT-ALIGN: right
+}
+.i-03-td-title-dis {
+	PADDING-RIGHT: 2px; BACKGROUND-POSITION: 2px 50%; PADDING-LEFT: 12px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; WIDTH: auto; COLOR: gray; LINE-HEIGHT: 20px; PADDING-TOP: 2px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 20px; BACKGROUND-COLOR: #f6f6f6; TEXT-ALIGN: right
+}
+.i-03-td {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; COLOR: #4d3400; PADDING-TOP: 4px; HEIGHT: 26px; BACKGROUND-COLOR: #fafafa
+}
+.i-03-bottom-tbl {
+	HEIGHT: 3px; BACKGROUND-COLOR: #333333
+}
+.e-01-tbl-th-tr {
+	FONT-SIZE: 12px; COLOR: #ffffff; FONT-FAMILY: 宋体; HEIGHT: 22px; BACKGROUND-COLOR: #2f78c3; TEXT-ALIGN: center
+}
+.e-01-tbl-th-td {
+	PADDING-LEFT: 0px; FONT-SIZE: 12px; COLOR: #ffffff; PADDING-TOP: 2px; HEIGHT: 20px
+}
+.e-01-tr {
+	FONT-SIZE: 12px; MARGIN: 0px; COLOR: #000000; FONT-FAMILY: 宋体; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff
+}
+.e-01-tr-1 {
+	FONT-SIZE: 12px; MARGIN: 0px; COLOR: #000000; FONT-FAMILY: 宋体; HEIGHT: 22px; BACKGROUND-COLOR: #ecf7fb
+}
+.e-01-tr-2 {
+	FONT-SIZE: 12px; MARGIN: 0px; COLOR: #000000; FONT-FAMILY: 宋体; HEIGHT: 22px; BACKGROUND-COLOR: #ffffff
+}
+.e-01-td {
+	PADDING-LEFT: 2px; FONT-SIZE: 12px; COLOR: #000000; PADDING-TOP: 2px; HEIGHT: 20px
+}
+.e-01-td-r {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 2px; FONT-SIZE: 12px; COLOR: #4d3400; PADDING-TOP: 2px; HEIGHT: 20px; TEXT-ALIGN: right
+}
+.e-01-td-c {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 2px; FONT-SIZE: 12px; COLOR: #4d3400; PADDING-TOP: 2px; HEIGHT: 20px; TEXT-ALIGN: center
+}
+.e-01-bottom-tbl {
+	HEIGHT: 3px; BACKGROUND-COLOR: #333333
+}
+.td_jcsearch {
+	PADDING-LEFT: 10px; FONT-SIZE: 12px; PADDING-BOTTOM: 1px; COLOR: #333333; PADDING-TOP: 6px; HEIGHT: 20px; BACKGROUND-COLOR: #ffffff
+}
+.body_blank{
+	background-image: url('../images/bk.jpg');background-repeat: no-repeat;background-attachment:fixed;background-position: top right
+}
+
